@@ -64,7 +64,7 @@ To practice the following:
 
 ### Part A - SQL (30 Marks)
 
-You will be provided with an SQL database file containing information about various game development projects and their associated assets. This database includes tables for projects, assets, developers, and timelines and contains the tables shown below.
+You will be provided with an SQLite database file (via email before 5PM 18th December 2023) containing information about various game development projects and their associated assets. This database includes tables for projects, assets, developers, and timelines and contains the tables shown below.
 
 #### Projects
 
@@ -198,7 +198,7 @@ Your grade for this component will depend directly upon the **regularity** of yo
 
 ## Submission Requirements
 
-1.  A **README** file containing a link to your R source code repository. Ensure that **no** changes are made to the repository following the submission deadline. You should create a separate fork for this submission and leave it unchanged after the deadline. Ask your lecturer for details on fork creation.
+1.  A link to your R source code repository. Ensure that **no** changes are made to the repository following the submission deadline. You should create a separate fork for this submission and leave it unchanged after the deadline. Ask your lecturer for details on fork creation.
 2.  The assignment must be entirely the work of each student. Students are **not** permitted to share any pseudocode or source code from their solution with any other group in the class.
 3.  Students may **not** distribute the source code of their solution to any other student, in any format (i.e., electronic, verbal, or hardcopy transmission).
 4.  Plagiarised assignments will receive a mark of **zero**. This also applies to the individual/group allowing their work to be plagiarised. Any plagiarism will be reported to the Head of Department and a report will be added to your permanent academic record.
