@@ -62,9 +62,11 @@ To practice the following:
 
 ## Functional Requirements
 
-### Part A - SQL (30 Marks)
+### Part A - SQL (20 Marks)
 
-You will be provided with an SQLite database file (via email before 5PM 18th December 2023) containing information about various game development projects and their associated assets. This database includes tables for projects, assets, developers, and timelines and contains the tables shown below.
+You will be provided with an SQLite database file (via email before **5PM 18th December 2023**) containing information about various game development projects and their associated assets. 
+
+This database includes tables for projects, assets, developers, timelines, and customers. The structure of each table is shown.
 
 #### Projects
 
@@ -76,6 +78,7 @@ You will be provided with an SQLite database file (via email before 5PM 18th Dec
 | EndDate     | Date      | End date of the project                          |
 | Budget      | Decimal   | Total budget allocated for the project           |
 | Status      | String    | Current status of the project (e.g., In Progress, Completed, Cancelled) |
+| CustomerID  | Integer   | Identifier linking to the Customers table (Foreign Key) |
 
 #### Assets
 
@@ -114,12 +117,21 @@ You will be provided with an SQLite database file (via email before 5PM 18th Dec
 | ExpectedCompletionDate | Date   | Expected date of completion for the milestone  |
 | ActualCompletionDate| Date      | Actual date of completion for the milestone    |
 
+#### Customers
+
+| Column Name     | Data Type | Description                                    |
+|-----------------|-----------|------------------------------------------------|
+| CustomerID      | Integer   | Unique identifier for each customer (Primary Key) |
+| CustomerName    | String    | Name of the customer                           |
+| CustomerCity    | String    | City of the customer                           |
+| CustomerCountry | String    | Country of the customer           
+
 
 You are required to write **three** core SQL queries to perform the following tasks:
 
-1. List all projects that were completed in the last two years and involved more than three animation assets.
-2. List the average development time for projects, categorized by the number of assets used.
-3. List the top three developers based on the number of successful projects they've been involved in.
+1. List the total budget allocated for projects in each country, along with the count of projects per country. Display sorted by the total budget in descending order.
+2. List the average development time for projects, categorized by the number of assets used. 
+3. List the top three developers based on the number of successful projects they've been involved in. Display the results.
 
 You are also required to demonstrate the following **three** SQL concepts using no fewer than **three** distinct SQL statements:
 
@@ -127,7 +139,7 @@ You are also required to demonstrate the following **three** SQL concepts using 
 2. SELECT with DISTINCT and ORDER BY
 3. Subquery with SELECT
 
-Output the results in formatted table(s) in a Quarto Notebook file inside a **Quarto Project**.
+Display the results in formatted table(s) in a Quarto Notebook file inside a **Quarto Project**. You should add pagination to the tables if the number of rows is larger than 8-10 (see Recommended Reading on creating tables)
 
 ### Part B - Linear Regression (20 Marks)
 
@@ -157,20 +169,20 @@ Output the results in a properly a **Quarto Project**. The web application does 
 
 You are required to present Assess the student's ability to present a Quarto project containing three well-formatted documents. You will be assessed in terms of adherence to best practices in coding and data visualization and the quality of your conclusion. The assessment criteria for this component are listed below:
 
-#### Document Formatting (5 Marks)
+#### Document Formatting (4 Marks)
 
 - Overall structure and organization of the report.
 - Effective use of headings, subheadings, and bullet points.
 - Consistency in font, spacing, and margins.
 - Proper pagination and table of contents (if applicable).
 
-#### Suitability of Tables in Part A (5 Marks)
+#### Suitability of Tables in Part A (4 Marks)
 
 - Clarity and readability of tables.
 - Appropriate labeling for tables.
 - Consistent and legible formatting in tables and figures.
 
-#### Suitability of Plots in Part B (5 Marks)
+#### Suitability of Plots in Part B (4 Marks)
 
 - Relevance and effectiveness of chosen plots to represent the data.
 - Ability to convey the intended message or findings clearly.
@@ -182,11 +194,15 @@ You are required to present Assess the student's ability to present a Quarto pro
 - Use of efficient and appropriate coding methods.
 - Adherence to data visualization best practices, including color choice, scale, and avoiding misleading representations.
 
-#### Conclusion and Reflection (5 Marks)
+#### Conclusion and Reflection (4 Marks)
 
 - Inclusion of a 1-2 paragraph Conclusion section.
 - Depth of reflection on what was learned from each part of the assignment.
 - Insightful discussion on how the skills and knowledge gained apply to game development and computer animation.
+
+### Part D - Technology Exploration (10 Marks)
+
+Finally, you will be awarded a maximum of 10 marks for creative use of R packages which have **not** been covered in class. This could be a package for rendering tables (i.e. reactable), or effective use of OPML fields, or rendering the geospatial data from the database (i.e. customer city and customer country) using additional R packages (i.e. ggplot2 and ggmap).
 
 ## Version Control Requirements
 
@@ -212,6 +228,7 @@ Your grade for this component will depend directly upon the **regularity** of yo
 * [Recommended Text - OpenIntro Statistics Videos & Slides](https://www.openintro.org/book/os/) 
 * [SQL Tutorial](https://www.w3schools.com/sql/)
 * [A Comprehensive Introduction to Working with Databases using R](https://blog.rsquaredacademy.com/working-with-databases-using-r/)
+* [How to Make Beautiful Tables in R](https://rfortherestofus.com/2019/11/how-to-make-beautiful-tables-in-r#:~:text=kable%20%2B%20kableExtra&text=The%20goal%20of%20kableExtra%20is,similar%20with%20ggplot2%20and%20plotly%20.)
 * [Simple Linear Regression | An Easy Introduction & Examples](https://www.scribbr.com/statistics/simple-linear-regression/)
 * [Linear regression using R programming](https://youtu.be/-mGXnm0fHtI)
 * [Add Regression Line to ggplot2 Plot in R](https://www.geeksforgeeks.org/add-regression-line-to-ggplot2-plot-in-r/)
@@ -224,6 +241,6 @@ Your grade for this component will depend directly upon the **regularity** of yo
 
 The resources below are provided as a mixture of **optional background reading**, technical reference, and useful tutorials. 
 
-* [Tutorial: Hello, Quarto](https://quarto.org/docs/get-started/hello/rstudio.html)
+* [YouTube - Hello, Quarto: A World of Possibilities (for Reproducible Publishing)](https://youtu.be/Qrz2rUWM-uY)
+* [YouTube - Beautiful reports and presentations with Quarto](https://youtu.be/hbf7Ai3jnxY?t=1693)
 * [OPML Options](https://quarto.org/docs/reference/formats/opml.html)
-* [Cross References](https://quarto.org/docs/authoring/cross-references.html)
