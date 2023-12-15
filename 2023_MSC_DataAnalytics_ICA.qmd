@@ -4,43 +4,7 @@ subtitle: 'SQL, Quarto & Linear Regression'
 author: "Niall McGuinness"
 date: "12/14/2023"    #"`r format(Sys.Date(), '%B %d %Y')`"
 format: 
-  html:
-    theme: "flatly" 
-    #toc
-    toc: true
-    toc-location: left
-    toc-title: "Table of Contents"
-    number-sections: false
-    #figures
-    fig-align: center
-    fig-width: 6
-    fig-height: 4
-    fig-dpi: 200 
-    fig-format: png
-    fig-cap-location: bottom
-    #tables
-    tbl-cap-location: bottom
-    #links
-    link-external-newwindow: true
-    link-external-icon: true
-    #code
-    code-tools: true
-    code-line-numbers: true
-    code-fold: true
-    code-block-border-left: true
-    code-overflow: scroll
-    code-copy: true
-    code-block-bg: true
-    #footnotes
-    footnotes-hover: true
-    reference-location: document
-    #citation
-    citation: true
-    lang: en-GB
-    citations-hover: true
-    citation-location: document
-    #bibliography
-    #bibliography: references.bib
+  pdf 
 ---
 
 ## Learning Outcomes
@@ -153,11 +117,9 @@ You are required to perform the following tasks:
 
 Output the results in a Quarto Notebook file inside a **Quarto Project**.
 
-### Part C - Interactive Web Application (30 Marks)
+### Part C - Interactive Shiny Web Application (30 Marks)
 
-Create an interactive web application using Quarto and Shiny to display and interact with data from the database. 
-
-You are required develop an interactive web web application containing **two** pages/tabs which allow the following:
+Create an interactive web application using Quarto Dashboards and Shiny to display and interact with data from the database. You are required develop an interactive web web application containing **two** pages/tabs which allow the following:
 
 1. The first page/tab should allow the user to view the contents of the five tables in the database with no filtering or queries executed.
 2. The second page/tab should allow users to visualize data through 2-3 appropriate plots and interact with at least 1 plot by hovering over the data presented. Typically, plots could include data related to project timelines, budget utilization, success rates, etc.
@@ -200,7 +162,7 @@ You are required to present Assess the student's ability to present a Quarto pro
 - Depth of reflection on what was learned from each part of the assignment.
 - Insightful discussion on how the skills and knowledge gained apply to game development and computer animation.
 
-### Part D - Technology Exploration (10 Marks)
+### Part E - Technology Exploration (10 Marks)
 
 Finally, you will be awarded a maximum of 10 marks for creative use of R packages which have **not** been covered in class. This could be a package for rendering tables (i.e. reactable), or effective use of OPML fields, or rendering the geospatial data from the database (i.e. customer city and customer country) using additional R packages (i.e. ggplot2 and ggmap).
 
