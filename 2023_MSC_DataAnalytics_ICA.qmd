@@ -1,15 +1,19 @@
 ---
-title: Data Analytics for Immersive Environments - Individual Project
-subtitle: Interactive RDBMS data with Quarto & Shiny
-author: Niall McGuinness
-date: now #notice how easy it is to add a date
+title: "Data Analytics for Immersive Environments - Individual Project"
+subtitle: "Interactive RDBMS data with Quarto & Shiny"
+author: "Niall McGuinness"
+date: "12/16/23"  #MM/DD/YY
+date-modified: now #notice how easy it is to add a date
+abstract: "This assignment is designed for an postgraduate program with a focus on Data Analytics for Game & Extended Reality and Computer Animation. It encompasses five distinct parts, each aimed at assessing and enhancing students' proficiency in different aspects of data analytics as applied to game development and animation."
 format: 
+  pdf:
+    toc: true
   html:
     theme: flatly
     #toc
     toc: true
     toc-location: left
-    toc-title: Table of Contents
+    toc-title: "Table of Contents"
     number-sections: false
     #footnotes
     footnotes-hover: true
@@ -231,27 +235,31 @@ Your grade for this component will depend directly upon the **regularity** of yo
 * [Recommended Text - OpenIntro Statistics Videos & Slides](https://www.openintro.org/book/os/) 
 * [SQL Tutorial](https://www.w3schools.com/sql/)
 * [A Comprehensive Introduction to Working with Databases using R](https://blog.rsquaredacademy.com/working-with-databases-using-r/)
-* [How to Make Beautiful Tables in R](https://rfortherestofus.com/2019/11/how-to-make-beautiful-tables-in-r#:~:text=kable%20%2B%20kableExtra&text=The%20goal%20of%20kableExtra%20is,similar%20with%20ggplot2%20and%20plotly%20.)
 * [Simple Linear Regression | An Easy Introduction & Examples](https://www.scribbr.com/statistics/simple-linear-regression/)
 * [Linear regression using R programming](https://youtu.be/-mGXnm0fHtI)
-* [Add Regression Line to ggplot2 Plot in R](https://www.geeksforgeeks.org/add-regression-line-to-ggplot2-plot-in-r/)
-* [Fitting and visualizing linear regression models with the ggplot2 R package (CC237)](https://youtu.be/1Vs-ckEI94M)
-* [ggplot for plots and graphs. An introduction to data visualization using R programming](https://youtu.be/HPJn1CMvtmI])
+
+## Quarto Markdown & Shiny Related Resources
+
+* [YouTube - Hello, Quarto: A World of Possibilities (for Reproducible Publishing)](https://youtu.be/Qrz2rUWM-uY)
+* [Quarto - Using R](https://quarto.org/docs/computations/r.html)
 * [Quarto Dashboards | Charles Teague | Posit](https://www.youtube.com/watch?v=_VGJIPRGTy4)
 * [Dashboards with Shiny for R](https://quarto.org/docs/dashboards/interactivity/shiny-r.html)
 
-## Plotting Resources
+## Plot & Table Related Resources
 
-* [How to style your Quarto docs without knowing HTML & CSS](https://youtu.be/jX4_Dnzhl0M)
-* [Drag-and-drop ggplot2 graphs with the Esquisse library](https://youtu.be/FWLxE-ARuO8)
+* [Add Regression Line to ggplot2 Plot in R](https://www.geeksforgeeks.org/add-regression-line-to-ggplot2-plot-in-r/)
+* [Fitting and visualizing linear regression models with the ggplot2 R package (CC237)](https://youtu.be/1Vs-ckEI94M)
 * [Visualize your data using ggplot. R programming is the best platform for creating plots and graphs.](https://youtu.be/rfR9Nrpfnyg)
+* [Drag-and-drop ggplot2 graphs with the Esquisse library](https://youtu.be/FWLxE-ARuO8)
+* [ggplot for plots and graphs. An introduction to data visualization using R programming](https://youtu.be/HPJn1CMvtmI])
 * [Animate Graphs in R: Make Gorgeous Animated Plots with gganimate](https://www.youtube.com/watch?v=SnCi0s0e4Io)
+* [How to Make Beautiful Tables in R](https://rfortherestofus.com/2019/11/how-to-make-beautiful-tables-in-r#:~:text=kable%20%2B%20kableExtra&text=The%20goal%20of%20kableExtra%20is,similar%20with%20ggplot2%20and%20plotly%20.)
 
 ## Additional Resources
 
 The resources below are provided as a mixture of **optional background reading**, technical reference, and useful tutorials. 
 
-* [YouTube - Hello, Quarto: A World of Possibilities (for Reproducible Publishing)](https://youtu.be/Qrz2rUWM-uY)
 * [YouTube - Beautiful reports and presentations with Quarto](https://youtu.be/hbf7Ai3jnxY?t=1693)
+* [How to style your Quarto docs without knowing HTML & CSS](https://youtu.be/jX4_Dnzhl0M)
 * [OPML Options](https://quarto.org/docs/reference/formats/opml.html)
 
