@@ -7,7 +7,12 @@ date-modified: now #notice how easy it is to add a date
 abstract: "This assignment is designed for an postgraduate program with a focus on Data Analytics for Game & Extended Reality and Computer Animation. It encompasses five distinct parts, each aimed at assessing and enhancing students' proficiency in different aspects of data analytics as applied to game development and animation."
 format: 
   html:
-    theme: flatly
+    #add dark/light toggle on top RHS of web page
+    theme:             
+      light: journal
+      dark: darkly
+    #allows text to occupy page width
+    page-layout: full 
     #toc
     toc: true
     toc-location: left
@@ -21,7 +26,6 @@ format:
     lang: en-GB
     citations-hover: true
     citation-location: document
-    page-layout: full #allows text to occupy page width
 ---
 
 ## Learning Outcomes
