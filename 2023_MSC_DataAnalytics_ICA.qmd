@@ -6,8 +6,6 @@ date: "12/16/23"  #MM/DD/YY
 date-modified: now #notice how easy it is to add a date
 abstract: "This assignment is designed for an postgraduate program with a focus on Data Analytics for Game & Extended Reality and Computer Animation. It encompasses five distinct parts, each aimed at assessing and enhancing students' proficiency in different aspects of data analytics as applied to game development and animation."
 format: 
-  pdf:
-    toc: true
   html:
     theme: flatly
     #toc
