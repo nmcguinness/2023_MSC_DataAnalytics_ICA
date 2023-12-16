@@ -171,7 +171,13 @@ You must include a minimum of **two fields** for interaction for **each** plot.
 
 Output the results in a properly a **Quarto Project**. The web application does **not** need to be published to a remote server and may be run from your machine.
 
-### Part D - Quality & Conclusions (20 Marks)
+### Part D - Technology Exploration (10 Marks)
+
+Finally, you will be awarded a maximum of 10 marks for creative use of R packages which have **not** been covered in class. For example, this could be a package for rendering tables (i.e. reactable),  animating plots (i.e. gganimate), or rendering the geospatial data from the database (i.e. customer city and customer country) using additional R packages (i.e. ggplot2 and ggmap).
+
+Note, in order to receive the marks for this component you should include a short paragraph in a separate Quarto Markdown file, entitled *Technology Exploration.qmd*, which summarises what component(s) you have added.
+
+### Part E - Quality & Conclusions (20 Marks)
 
 You are required to present Assess the student's ability to present a Quarto project containing three well-formatted documents. You will be assessed in terms of adherence to best practices in coding and data visualization and the quality of your conclusion. The assessment criteria for this component are listed below:
 
@@ -205,12 +211,6 @@ You are required to present Assess the student's ability to present a Quarto pro
 - Inclusion of a 1-2 paragraph Conclusion section.
 - Depth of reflection on what was learned from each part of the assignment.
 - Insightful discussion on how the skills and knowledge gained apply to game development and computer animation.
-
-### Part E - Technology Exploration (10 Marks)
-
-Finally, you will be awarded a maximum of 10 marks for creative use of R packages which have **not** been covered in class. For example, this could be a package for rendering tables (i.e. reactable),  animating plots (i.e. gganimate), or rendering the geospatial data from the database (i.e. customer city and customer country) using additional R packages (i.e. ggplot2 and ggmap).
-
-Note, in order to receive the marks for this component you should include a short paragraph in a separate Quarto Markdown file, entitled *Technology Exploration.qmd*, which summarises what component(s) you have added.
 
 ## Version Control Requirements
 
