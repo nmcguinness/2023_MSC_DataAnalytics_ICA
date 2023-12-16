@@ -16,11 +16,12 @@ format:
     #footnotes
     footnotes-hover: true
     reference-location: document
-    #citation
+    #citation - add a copyable citation to this document
     citation: true
     lang: en-GB
     citations-hover: true
     citation-location: document
+    page-layout: full #allows text to occupy page width
 ---
 
 ## Learning Outcomes
