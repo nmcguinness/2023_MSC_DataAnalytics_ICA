@@ -4,8 +4,6 @@ subtitle: Interactive RDBMS data with Quarto & Shiny
 author: Niall McGuinness
 date: now #notice how easy it is to add a date
 format: 
-  pdf:
-    toc: true
   html:
     theme: flatly
     #toc

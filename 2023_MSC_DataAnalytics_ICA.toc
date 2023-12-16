@@ -1,0 +1,25 @@
+\contentsline {subsection}{\nonumberline Learning Outcomes}{1}{subsection*.3}%
+\contentsline {subsection}{\nonumberline Functional Requirements}{2}{subsection*.5}%
+\contentsline {subsubsection}{\nonumberline Part A - SQL (20 Marks)}{2}{subsubsection*.7}%
+\contentsline {paragraph}{\nonumberline \textbf {Projects}}{2}{paragraph*.9}%
+\contentsline {paragraph}{\nonumberline \textbf {Assets}}{2}{paragraph*.11}%
+\contentsline {paragraph}{\nonumberline \textbf {Developers}}{3}{paragraph*.13}%
+\contentsline {paragraph}{\nonumberline \textbf {Timelines}}{3}{paragraph*.15}%
+\contentsline {paragraph}{\nonumberline \textbf {Customers}}{3}{paragraph*.17}%
+\contentsline {paragraph}{\nonumberline \textbf {ProjectDevelopers}}{4}{paragraph*.19}%
+\contentsline {paragraph}{\nonumberline \textbf {AssetsDevelopers}}{4}{paragraph*.21}%
+\contentsline {subsubsection}{\nonumberline Part B - Linear Regression (20 Marks)}{5}{subsubsection*.23}%
+\contentsline {subsubsection}{\nonumberline Part C - Interactive Quarto Dashboard \& Shiny Web Application (30 Marks)}{5}{subsubsection*.25}%
+\contentsline {subsubsection}{\nonumberline Part D - Quality \& Conclusions (20 Marks)}{6}{subsubsection*.27}%
+\contentsline {paragraph}{\nonumberline Document Formatting (4 Marks)}{6}{paragraph*.29}%
+\contentsline {paragraph}{\nonumberline Suitability of Tables in Part A (4 Marks)}{6}{paragraph*.31}%
+\contentsline {paragraph}{\nonumberline Suitability of Plots in Part B (4 Marks)}{6}{paragraph*.33}%
+\contentsline {paragraph}{\nonumberline Adherence to Best Practices in Coding and Data Visualization (5 Marks)}{6}{paragraph*.35}%
+\contentsline {paragraph}{\nonumberline Conclusion and Reflection (4 Marks)}{6}{paragraph*.37}%
+\contentsline {subsubsection}{\nonumberline Part E - Technology Exploration (10 Marks)}{7}{subsubsection*.39}%
+\contentsline {subsection}{\nonumberline Version Control Requirements}{7}{subsection*.41}%
+\contentsline {subsection}{\nonumberline Submission Requirements}{7}{subsection*.43}%
+\contentsline {subsection}{\nonumberline Recommended Reading}{8}{subsection*.45}%
+\contentsline {subsection}{\nonumberline Plotting Resources}{8}{subsection*.47}%
+\contentsline {subsection}{\nonumberline Additional Resources}{8}{subsection*.49}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
