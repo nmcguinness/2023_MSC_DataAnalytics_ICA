@@ -250,6 +250,9 @@ Your grade for this component will depend directly upon the **regularity** of yo
 
 ## Plot & Table Related Resources
 
+* [The R Graph Gallery](https://r-graph-gallery.com/)
+* [Get started with esquisse](https://cran.r-project.org/web/packages/esquisse/vignettes/get-started.html)
+* [Analyze Data quickly with Esquisse](https://towardsdatascience.com/how-to-analyze-data-quickly-without-tableau-but-close-66eb1f2fffd2)
 * [Add Regression Line to ggplot2 Plot in R](https://www.geeksforgeeks.org/add-regression-line-to-ggplot2-plot-in-r/)
 * [Fitting and visualizing linear regression models with the ggplot2 R package (CC237)](https://youtu.be/1Vs-ckEI94M)
 * [Visualize your data using ggplot. R programming is the best platform for creating plots and graphs.](https://youtu.be/rfR9Nrpfnyg)
@@ -265,4 +268,6 @@ The resources below are provided as a mixture of **optional background reading**
 * [YouTube - Beautiful reports and presentations with Quarto](https://youtu.be/hbf7Ai3jnxY?t=1693)
 * [How to style your Quarto docs without knowing HTML & CSS](https://youtu.be/jX4_Dnzhl0M)
 * [OPML Options](https://quarto.org/docs/reference/formats/opml.html)
+
+
 
