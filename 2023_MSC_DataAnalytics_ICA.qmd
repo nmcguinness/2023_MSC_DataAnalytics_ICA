@@ -1,13 +1,30 @@
 ---
-title: "Data Analytics for Immersive Environments - Individual Project"
-subtitle: 'SQL, Quarto & Linear Regression'
-author: "Niall McGuinness"
-date: "12/14/2023"    #"`r format(Sys.Date(), '%B %d %Y')`"
+title: Data Analytics for Immersive Environments - Individual Project
+subtitle: Interactive RDBMS data with Quarto & Shiny
+author: Niall McGuinness
+date: now #notice how easy it is to add a date
 format: 
-  pdf 
+  pdf:
+    toc: true
+  html:
+    theme: flatly
+    #toc
+    toc: true
+    toc-location: left
+    toc-title: Table of Contents
+    number-sections: false
+    #footnotes
+    footnotes-hover: true
+    reference-location: document
+    #citation
+    citation: true
+    lang: en-GB
+    citations-hover: true
+    citation-location: document
 ---
 
 ## Learning Outcomes
+
 
 To practice the following:
 
@@ -28,11 +45,13 @@ To practice the following:
 
 ### Part A - SQL (20 Marks)
 
-You will be provided with an SQLite database file (via email before **5PM 18th December 2023**) containing information about various game development projects and their associated assets. 
+You will be provided with an SQLite database file (via email before **5PM 18th December 2023**) containing information about various game development projects and their associated assets.
 
 This database includes tables for projects, assets, developers, timelines, and customers. The structure of each table is shown.
 
-#### Projects
+#### **Projects**
+
+Stores information about each game development project. It includes details like the project's unique identifier, name, start and end dates, budget, and the status of the project. It also links to the customer commissioning the project.
 
 | Column Name | Data Type | Description                                      |
 |-------------|-----------|--------------------------------------------------|
@@ -44,7 +63,9 @@ This database includes tables for projects, assets, developers, timelines, and c
 | Status      | String    | Current status of the project (e.g., In Progress, Completed, Cancelled) |
 | CustomerID  | Integer   | Identifier linking to the Customers table (Foreign Key) |
 
-#### Assets
+#### **Assets**
+
+Stores information about the various assets used in game development projects. Each asset has a unique identifier, and the table includes information about the project it is associated with, the name and type of the asset, and its creation date.
 
 | Column Name  | Data Type | Description                                       |
 |--------------|-----------|---------------------------------------------------|
@@ -54,7 +75,9 @@ This database includes tables for projects, assets, developers, timelines, and c
 | Type         | String    | Type of the asset (e.g., 3D Model, Animation, Texture) |
 | CreationDate | Date      | Date when the asset was created                   |
 
-#### Developers
+#### **Developers**
+
+Stores information about the developers working on various projects. It includes each developer's unique identifier, name, area of specialization, and the number of years of experience they have in the field.
 
 | Column Name    | Data Type | Description                                    |
 |----------------|-----------|------------------------------------------------|
@@ -63,15 +86,9 @@ This database includes tables for projects, assets, developers, timelines, and c
 | Specialisation | String    | Area of specialisation (e.g., Programmer, Animator, Artist) |
 | ExperienceYears| Integer   | Number of years of experience in the field     |
 
-#### ProjectDevelopers
+#### **Timelines**
 
-| Column Name   | Data Type | Description                                             |
-|---------------|-----------|---------------------------------------------------------|
-| ProjectID     | Integer   | Identifier linking to the Projects table (Foreign Key)  |
-| DeveloperID   | Integer   | Identifier linking to the Developers table (Foreign Key)|
-| Role          | String    | Role of the developer in the project (e.g., Lead, Contributor) |
-
-#### Timelines
+Tracks significant milestones for each project. It includes a unique identifier for each timeline entry, links to the respective project, descriptions of milestones, and both expected and actual completion dates.
 
 | Column Name         | Data Type | Description                                     |
 |---------------------|-----------|-------------------------------------------------|
@@ -81,23 +98,43 @@ This database includes tables for projects, assets, developers, timelines, and c
 | ExpectedCompletionDate | Date   | Expected date of completion for the milestone  |
 | ActualCompletionDate| Date      | Actual date of completion for the milestone    |
 
-#### Customers
+#### **Customers**
+
+Stores information about the clients commissioning game development projects. It includes a unique identifier for each customer, along with their name, city, and country.
 
 | Column Name     | Data Type | Description                                    |
 |-----------------|-----------|------------------------------------------------|
 | CustomerID      | Integer   | Unique identifier for each customer (Primary Key) |
 | CustomerName    | String    | Name of the customer                           |
 | CustomerCity    | String    | City of the customer                           |
-| CustomerCountry | String    | Country of the customer           
+| CustomerCountry | String    | Country of the customer     
 
+#### **ProjectDevelopers**
 
-You are required to write **three** core SQL queries to perform the following tasks:
+Links developers to the projects they are working on and shows which developer worked on which project and their specific role in that project.
+
+| Column Name   | Data Type | Description                                             |
+|---------------|-----------|---------------------------------------------------------|
+| ProjectID     | Integer   | Identifier linking to the Projects table (Foreign Key)  |
+| DeveloperID   | Integer   | Identifier linking to the Developers table (Foreign Key)|
+| Role          | String    | Role of the developer in the project (e.g., Lead, Contributor) |
+
+#### **AssetsDevelopers** 
+
+Links which developer was the principal developer on each asset.
+
+| Column Name   | Data Type | Description                                         |
+|---------------|-----------|-----------------------------------------------------|
+| AssetID       | Integer   | Identifier linking to the Assets table (Foreign Key)|
+| DeveloperID   | Integer   | Identifier linking to the Developers table (Foreign Key) |
+
+First, you are required to write **three** core SQL queries to perform the following tasks:
 
 1. List the total budget allocated for projects in each country, along with the count of projects per country. Display sorted by the total budget in descending order.
 2. List the average development time for projects, categorized by the number of assets used. 
 3. List the top three developers based on the number of successful projects they've been involved in. Display the results.
 
-You are also required to demonstrate the following **three** SQL concepts using no fewer than **three** distinct SQL statements:
+Next, you are also required to demonstrate the following **three** general SQL concepts using no fewer than **three** distinct SQL statements:
 
 1. SELECT with LIKE and OR
 2. SELECT with DISTINCT and ORDER BY
@@ -111,21 +148,26 @@ Utilise the provided dataset, which contains details about project budgets, time
 
 You are required to perform the following tasks:
 
-1. Perform linear regression to predict the success rate of a project based on its budget **and** team size and present the data in an appropriate plot.
-2. Interpret the model coefficients and discuss what insights they provide about game development.
-3. Comment on the reliability of the the linear regression model and any outliers present in the data.
+1. **Model**: Perform linear regression to predict the success rate of a project based on its budget **and** team size and present the data in an appropriate plot.
+2. **Interpret**: Interpret the model coefficients and discuss what insights they provide about game development.
+3. **Discuss**: Comment on the reliability of the the linear regression model and any outliers present in the data.
 
 Output the results in a Quarto Notebook file inside a **Quarto Project**.
 
-### Part C - Interactive Shiny Web Application (30 Marks)
+### Part C - Interactive Quarto Dashboard & Shiny Web Application (30 Marks)
 
-Create an interactive web application using Quarto Dashboards and Shiny to display and interact with data from the database. You are required develop an interactive web web application containing **two** pages/tabs which allow the following:
+Create an interactive web application using Quarto Dashboards and Shiny to display and interact with data from the database. You are required develop an interactive web web application containing **two pages/tabs** which allow the following:
 
-1. The first page/tab should allow the user to view the contents of the five tables in the database with no filtering or queries executed.
-2. The second page/tab should allow users to visualize data through 2-3 appropriate plots and interact with at least 1 plot by hovering over the data presented. Typically, plots could include data related to project timelines, budget utilization, success rates, etc.
-3. The second page/tab should allow for user interaction, such as selecting specific projects or developers to view more detailed data. You must include a minimum of 2 fields for interaction (e.g., textfield, dropdown, slider, checkbox) for each plot.
+1. **Data View**: The first page/tab should allow the user to view the contents of **any four tables** in the database with no filtering or queries executed.You may need to consider using a more advanced table library (e.g. kable + kableExtra, reactable, DT) to add pagination to larger tables.
+2. **Plot View**: The second page/tab should allow users to visualize data through 2-3 appropriate plots and **interact** with **each** plot. Typically, plots could include data related to project timelines, budget, asset types, etc. 
 
-Output the results in a properly a **Quarto Project**. The web application does not need to be published to a remote server and may be run from your machine.
+The second page/tab must support user interactions via input fields (e.g., textfield, dropdown, slider, checkbox) to allow interactions such as:
+* Selecting developers to view more detailed data on the projects they participated in.
+* Specifying a completion date range for projects. 
+
+You must include a minimum of **two fields** for interaction for **each** plot.
+
+Output the results in a properly a **Quarto Project**. The web application does **not** need to be published to a remote server and may be run from your machine.
 
 ### Part D - Quality & Conclusions (20 Marks)
 
@@ -164,7 +206,9 @@ You are required to present Assess the student's ability to present a Quarto pro
 
 ### Part E - Technology Exploration (10 Marks)
 
-Finally, you will be awarded a maximum of 10 marks for creative use of R packages which have **not** been covered in class. This could be a package for rendering tables (i.e. reactable), or effective use of OPML fields, or rendering the geospatial data from the database (i.e. customer city and customer country) using additional R packages (i.e. ggplot2 and ggmap).
+Finally, you will be awarded a maximum of 10 marks for creative use of R packages which have **not** been covered in class. For example, this could be a package for rendering tables (i.e. reactable),  animating plots (i.e. gganimate), or rendering the geospatial data from the database (i.e. customer city and customer country) using additional R packages (i.e. ggplot2 and ggmap).
+
+Note, in order to receive the marks for this component you should include a short paragraph in a separate Quarto Markdown file, entitled *Technology Exploration.qmd*, which summarises what component(s) you have added.
 
 ## Version Control Requirements
 
@@ -186,7 +230,6 @@ Your grade for this component will depend directly upon the **regularity** of yo
 
 ## Recommended Reading
 
-
 * [Recommended Text - OpenIntro Statistics Videos & Slides](https://www.openintro.org/book/os/) 
 * [SQL Tutorial](https://www.w3schools.com/sql/)
 * [A Comprehensive Introduction to Working with Databases using R](https://blog.rsquaredacademy.com/working-with-databases-using-r/)
@@ -199,6 +242,13 @@ Your grade for this component will depend directly upon the **regularity** of yo
 * [Quarto Dashboards | Charles Teague | Posit](https://www.youtube.com/watch?v=_VGJIPRGTy4)
 * [Dashboards with Shiny for R](https://quarto.org/docs/dashboards/interactivity/shiny-r.html)
 
+## Plotting Resources
+
+* [How to style your Quarto docs without knowing HTML & CSS](https://youtu.be/jX4_Dnzhl0M)
+* [Drag-and-drop ggplot2 graphs with the Esquisse library](https://youtu.be/FWLxE-ARuO8)
+* [Visualize your data using ggplot. R programming is the best platform for creating plots and graphs.](https://youtu.be/rfR9Nrpfnyg)
+* [Animate Graphs in R: Make Gorgeous Animated Plots with gganimate](https://www.youtube.com/watch?v=SnCi0s0e4Io)
+
 ## Additional Resources
 
 The resources below are provided as a mixture of **optional background reading**, technical reference, and useful tutorials. 
@@ -206,3 +256,4 @@ The resources below are provided as a mixture of **optional background reading**
 * [YouTube - Hello, Quarto: A World of Possibilities (for Reproducible Publishing)](https://youtu.be/Qrz2rUWM-uY)
 * [YouTube - Beautiful reports and presentations with Quarto](https://youtu.be/hbf7Ai3jnxY?t=1693)
 * [OPML Options](https://quarto.org/docs/reference/formats/opml.html)
+
