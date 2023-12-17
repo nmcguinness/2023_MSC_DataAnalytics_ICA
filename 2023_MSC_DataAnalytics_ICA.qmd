@@ -161,7 +161,7 @@ Output the results in a Quarto Notebook file inside a **Quarto Project**.
 
 ### Part C - Interactive Quarto Dashboard & Shiny Web Application (30 Marks)
 
-Create an interactive web application using Quarto Dashboards and Shiny to display and interact with data from the database. You are required develop an interactive web web application containing **two pages/tabs** which allow the following:
+Create an interactive web application using Quarto Dashboards and Shiny to display and interact with data from the database. You are required develop an interactive web application containing **two pages/tabs** which allow the following:
 
 1. **Data View**: The first page/tab should allow the user to view the contents of **any four tables** in the database with no filtering or queries executed.You may need to consider using a more advanced table library (e.g. kable + kableExtra, reactable, DT) to add pagination to larger tables.
 2. **Plot View**: The second page/tab should allow users to visualize data through 2-3 appropriate plots and **interact** with **each** plot. Typically, plots could include data related to project timelines, budget, asset types, etc. 
