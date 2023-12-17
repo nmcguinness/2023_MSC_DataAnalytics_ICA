@@ -176,7 +176,7 @@ Output the results in a properly a **Quarto Project**. The web application does 
 
 ### Part D - Technology Exploration (10 Marks)
 
-Finally, you will be awarded a maximum of 10 marks for creative use of R packages which have **not** been covered in class. For example, this could be a package for rendering tables (i.e. reactable),  animating plots (i.e. gganimate), or rendering the geospatial data from the database (i.e. customer city and customer country) using additional R packages (i.e. ggplot2 and ggmap).
+Finally, you will be awarded a maximum of 10 marks for creative use of R packages which have **not** been covered in class. For example, this could be a package for rendering more visually appealing tables (i.e. reactable), animating plots (i.e. gganimate), or rendering the geospatial data from the database (i.e. customer city and customer country) using additional R packages (i.e. ggplot2 and ggmap).
 
 Note, in order to receive the marks for this component you should include a short paragraph in a separate Quarto Markdown file, entitled *Technology Exploration.qmd*, which summarises what component(s) you have added.
 
@@ -225,12 +225,13 @@ Your grade for this component will depend directly upon the **regularity** of yo
 
 ## Submission Requirements
 
-1.  A link to your R source code repository. Ensure that **no** changes are made to the repository following the submission deadline. You should create a separate fork for this submission and leave it unchanged after the deadline. Ask your lecturer for details on fork creation.
-2.  The assignment must be entirely the work of each student. Students are **not** permitted to share any pseudocode or source code from their solution with any other group in the class.
-3.  Students may **not** distribute the source code of their solution to any other student, in any format (i.e., electronic, verbal, or hardcopy transmission).
-4.  Plagiarised assignments will receive a mark of **zero**. This also applies to the individual/group allowing their work to be plagiarised. Any plagiarism will be reported to the Head of Department and a report will be added to your permanent academic record.
-5.  Late assignments will **only** be accepted if accompanied by the appropriate medical note. This documentation must be received within 10 working days of the project deadline. The Institute standard penalties for late submission will apply.
-6.  Each student **must** complete and **sign** a single assignment cover sheet. Please submit the signed cover sheet before 5 pm on the Friday of the week of the deadline.
+1. In the README of your repository you must include the **file names** to be opened (i.e. Part(s) A - D) for each requirement. I will **not** filter through your submission looking for the correct file for each part. I will interpret the absence of this file as a failure to properly communicate your work which will negatively affect your grade for Part E.
+2. A link to your R source code repository. Ensure that **no** changes are made to the repository following the submission deadline. You should create a separate fork for this submission and leave it unchanged after the deadline. Ask your lecturer for details on fork creation.
+3.  The assignment must be entirely the work of each student. Students are **not** permitted to share any pseudocode or source code from their solution with any other group in the class.
+4.  Students may **not** distribute the source code of their solution to any other student, in any format (i.e., electronic, verbal, or hardcopy transmission).
+5.  Plagiarised assignments will receive a mark of **zero**. This also applies to the individual/group allowing their work to be plagiarised. Any plagiarism will be reported to the Head of Department and a report will be added to your permanent academic record.
+6.  Late assignments will **only** be accepted if accompanied by the appropriate medical note. This documentation must be received within 10 working days of the project deadline. The Institute standard penalties for late submission will apply.
+7.  Each student **must** complete and **sign** a single assignment cover sheet. Please submit the signed cover sheet before 5 pm on the Friday of the week of the deadline.
 
 
 ## Recommended Reading
