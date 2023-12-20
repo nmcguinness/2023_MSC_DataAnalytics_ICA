@@ -172,20 +172,20 @@ The second page/tab must support user interactions via input fields (e.g., textf
 
 You must include a minimum of **two fields** for interaction for **each** plot.
 
-Output the results in a **Shiny Application Project**. The application does **not** need to be published to a remote server and may be run from your machine. This will be a second, and separate project from the Quarto Website produced for Parts A & B.
+Output the results in a **Quarto Website**. The web site does **not** need to be published to a remote server and may be run from your machine. This will be a second, and separate project from the Quarto Website produced for Parts A & B.
 
 ### Part D - Technology Exploration (10 Marks)
 
 Finally, you will be awarded a maximum of 10 marks for creative use of R packages which have **not** been covered in class. For example, this could be a package for rendering more visually appealing tables (i.e. reactable), animating plots (i.e. gganimate), or rendering the geospatial data from the database (i.e. customer city and customer country) using additional R packages (i.e. ggplot2 and ggmap).
 
-Note, in order to receive the marks for this component you should include a short paragraph in a separate page, entitled *Technology Exploration.qmd*, which summarises what component(s) you have added, inside the **Quarto Website** from Parts A & B.
+Inside the **Quarto Website** from Parts A & B, you should include a short paragraph in a separate page, entitled *Technology Exploration.qmd*, which technologies you have explored in Parts A, B & C.
 
 ### Part E - Quality & Conclusions (20 Marks)
 
 You are required to present **two** separate project repos: 
 
-* **Quarto Website** which brings together Parts A, B, D.
-* **Shiny Application** which hosts the Quarto Dashboard for Part C.
+1. **Quarto Website** which brings together Parts A, B, D.
+2. **Quarto Website** which hosts the Quarto Dashboard for Part C.
 
 You will be assessed in terms of adherence to best practices in coding and data visualization and the quality of your conclusions. The assessment criteria for this component are listed below:
 
@@ -222,15 +222,15 @@ You will be assessed in terms of adherence to best practices in coding and data 
 
 ## Version Control Requirements
 
-You must use a recognised online code repository (e.g., GitHub) and make regular well-named commits to your private repository. A link to your code repo must be included in a README as part of the final submission and you must add your lecturer as a developer to the repository. The repository must be named *2023_DAIE_ICA_StudentInitials*.
+You must use a recognised online code repository (e.g., GitHub) and make regular well-named commits to your private repositories. Two links to your repos must be included in a README as part of the final submission and you must add your lecturer as a developer to the repositories. The repository must be named *2023_DAIE_ICA_1_StudentInitials* and *2023_DAIE_ICA_2_StudentInitials*.
 
-Your grade for this component will depend directly upon the **regularity** of your commits. A development project of this size should consist of a minimum of **5+ distinct commit messages** spread over the lifetime of the development. Committing all your code in one commit, before the deadline, will be interpreted negatively.
+Your grade for this component will depend directly upon the **regularity** of your commits. A development project of this size should consist of a minimum of **5+ distinct commit messages** per repository, spread over the lifetime of the development. Committing all your code in one commit, before the deadline, will be interpreted negatively.
 
 **Any submission made which does not include a repository link will not be graded.**
 
 ## Submission Requirements
 
-1. In the README of your repositories you must include the **main file name** to be opened for each of the two projects (e.g. *index.qmd* for Shiny Application) for each requirement. I will **not** filter through your submission looking for the correct file for each part. I will interpret the absence of this file as a failure to properly communicate your work which will negatively affect your grade for Part E.
+1. In the README of your repositories you must include the **main file name** to be opened for each of the two projects (e.g. *index.qmd* for Part C Application) for each requirement. I will **not** filter through your submission looking for the correct file for each part. I will interpret the absence of this file as a failure to properly communicate your work which will negatively affect your grade for Part E.
 2. A link to your R source code repositories (i.e. Quarto Website, Shiny Application). Ensure that **no** changes are made to the repositories following the submission deadline. You should create a separate fork for this submission and leave it unchanged after the deadline. Ask your lecturer for details on fork creation.
 3.  The assignment must be entirely the work of each student. Students are **not** permitted to share any pseudocode or source code from their solution with any other group in the class.
 4.  Students may **not** distribute the source code of their solution to any other student, in any format (i.e., electronic, verbal, or hardcopy transmission).
@@ -242,6 +242,7 @@ Your grade for this component will depend directly upon the **regularity** of yo
 
 * [GitHub - Quarto Website Demo](https://github.com/nmcguinness/2023_MSC_DataAnalytics_Quarto_Demo.git)
 * [GitHub - Shiny App with Quarto Dashboard](https://github.com/nmcguinness/2023_MSC_DataAnalytics_Shiny_Quarto_Demo.git)
+* [Screencast - Setting up a Quarto Dashboard](https://studentdkit.sharepoint.com/:v:/s/2023-L9Y1-DataAnalytics/EQh3cOIuWuBEprAsfQl8YGoB1FJUKVDf18WQftaSUcSpZw?e=hF6V8h)
 * [GitHub - Connecting to an SQLite DB](https://github.com/nmcguinness/2023_MSC_DataAnalytics_SQL.git)
 
 ## Recommended Reading
