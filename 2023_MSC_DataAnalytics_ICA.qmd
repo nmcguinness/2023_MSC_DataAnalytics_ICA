@@ -145,7 +145,7 @@ Next, you are also required to demonstrate the following **three** general SQL c
 2. SELECT with DISTINCT and ORDER BY
 3. Subquery with SELECT
 
-Display the results in formatted table(s) in a Quarto Notebook file inside a **Quarto Project**. You should add pagination to the tables if the number of rows is larger than 8-10 (see Recommended Reading on creating tables)
+Display the results in formatted table(s) in a Quarto Notebook file inside a **Quarto Website**. You should add pagination to the tables if the number of rows is larger than 8-10 (see Recommended Reading on creating tables)
 
 ### Part B - Linear Regression (20 Marks)
 
@@ -157,11 +157,11 @@ You are required to perform the following tasks:
 2. **Interpret**: Interpret the model coefficients and discuss what insights they provide about game development.
 3. **Discuss**: Comment on the reliability of the the linear regression model and any outliers present in the data.
 
-Output the results in a Quarto Notebook file inside a **Quarto Project**.
+Output the results in a Quarto Notebook file inside the **Quarto Website** from Part A.
 
-### Part C - Interactive Quarto Dashboard & Shiny Web Application (30 Marks)
+### Part C - Interactive Shiny Application using Quarto Dashboard (30 Marks)
 
-Create an interactive web application using Quarto Dashboards and Shiny to display and interact with data from the database. You are required develop an interactive web application containing **two pages/tabs** which allow the following:
+Create an interactive Shiny application using Quarto Dashboards to display and interact with data from the database. You are required develop an interactive web application containing **two pages/tabs** which allow the following:
 
 1. **Data View**: The first page/tab should allow the user to view the contents of **any four tables** in the database with no filtering or queries executed.You may need to consider using a more advanced table library (e.g. kable + kableExtra, reactable, DT) to add pagination to larger tables.
 2. **Plot View**: The second page/tab should allow users to visualize data through 2-3 appropriate plots and **interact** with **each** plot. Typically, plots could include data related to project timelines, budget, asset types, etc. 
@@ -172,17 +172,22 @@ The second page/tab must support user interactions via input fields (e.g., textf
 
 You must include a minimum of **two fields** for interaction for **each** plot.
 
-Output the results in a properly a **Quarto Project**. The web application does **not** need to be published to a remote server and may be run from your machine.
+Output the results in a **Shiny Application Project**. The application does **not** need to be published to a remote server and may be run from your machine. This will be a second, and separate project from the Quarto Website produced for Parts A & B.
 
 ### Part D - Technology Exploration (10 Marks)
 
 Finally, you will be awarded a maximum of 10 marks for creative use of R packages which have **not** been covered in class. For example, this could be a package for rendering more visually appealing tables (i.e. reactable), animating plots (i.e. gganimate), or rendering the geospatial data from the database (i.e. customer city and customer country) using additional R packages (i.e. ggplot2 and ggmap).
 
-Note, in order to receive the marks for this component you should include a short paragraph in a separate Quarto Markdown file, entitled *Technology Exploration.qmd*, which summarises what component(s) you have added.
+Note, in order to receive the marks for this component you should include a short paragraph in a separate page, entitled *Technology Exploration.qmd*, which summarises what component(s) you have added, inside the **Quarto Website** from Parts A & B.
 
 ### Part E - Quality & Conclusions (20 Marks)
 
-You are required to present Assess the student's ability to present a Quarto project containing three well-formatted documents. You will be assessed in terms of adherence to best practices in coding and data visualization and the quality of your conclusion. The assessment criteria for this component are listed below:
+You are required to present **two** separate project repos: 
+
+* **Quarto Website** which brings together Parts A, B, D.
+* **Shiny Application** which hosts the Quarto Dashboard for Part C.
+
+You will be assessed in terms of adherence to best practices in coding and data visualization and the quality of your conclusions. The assessment criteria for this component are listed below:
 
 #### Document Formatting (4 Marks)
 
@@ -194,7 +199,7 @@ You are required to present Assess the student's ability to present a Quarto pro
 #### Suitability of Tables in Part A (4 Marks)
 
 - Clarity and readability of tables.
-- Appropriate labeling for tables.
+- Appropriate labelling for tables.
 - Consistent and legible formatting in tables and figures.
 
 #### Suitability of Plots in Part B (4 Marks)
@@ -233,6 +238,11 @@ Your grade for this component will depend directly upon the **regularity** of yo
 6.  Late assignments will **only** be accepted if accompanied by the appropriate medical note. This documentation must be received within 10 working days of the project deadline. The Institute standard penalties for late submission will apply.
 7.  Each student **must** complete and **sign** a single assignment cover sheet. Please submit the signed cover sheet before 5 pm on the Friday of the week of the deadline.
 
+## Support Material
+
+* [GitHub - Quarto Website Demo](https://github.com/nmcguinness/2023_MSC_DataAnalytics_Quarto_Demo.git)
+* [GitHub - Shiny App with Quarto Dashboard](https://github.com/nmcguinness/2023_MSC_DataAnalytics_Shiny_Quarto_Demo.git)
+* [GitHub - Connecting to an SQLite DB](https://github.com/nmcguinness/2023_MSC_DataAnalytics_SQL.git)
 
 ## Recommended Reading
 

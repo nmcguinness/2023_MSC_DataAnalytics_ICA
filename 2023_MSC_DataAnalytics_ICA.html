@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-GB" xml:lang="en-GB"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.529">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -54,12 +54,13 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#part-a---sql-20-marks" id="toc-part-a---sql-20-marks" class="nav-link" data-scroll-target="#part-a---sql-20-marks">Part A - SQL (20 Marks)</a></li>
   <li><a href="#part-b---linear-regression-20-marks" id="toc-part-b---linear-regression-20-marks" class="nav-link" data-scroll-target="#part-b---linear-regression-20-marks">Part B - Linear Regression (20 Marks)</a></li>
-  <li><a href="#part-c---interactive-quarto-dashboard-shiny-web-application-30-marks" id="toc-part-c---interactive-quarto-dashboard-shiny-web-application-30-marks" class="nav-link" data-scroll-target="#part-c---interactive-quarto-dashboard-shiny-web-application-30-marks">Part C - Interactive Quarto Dashboard &amp; Shiny Web Application (30 Marks)</a></li>
+  <li><a href="#part-c---interactive-shiny-application-using-quarto-dashboard-30-marks" id="toc-part-c---interactive-shiny-application-using-quarto-dashboard-30-marks" class="nav-link" data-scroll-target="#part-c---interactive-shiny-application-using-quarto-dashboard-30-marks">Part C - Interactive Shiny Application using Quarto Dashboard (30 Marks)</a></li>
   <li><a href="#part-d---technology-exploration-10-marks" id="toc-part-d---technology-exploration-10-marks" class="nav-link" data-scroll-target="#part-d---technology-exploration-10-marks">Part D - Technology Exploration (10 Marks)</a></li>
   <li><a href="#part-e---quality-conclusions-20-marks" id="toc-part-e---quality-conclusions-20-marks" class="nav-link" data-scroll-target="#part-e---quality-conclusions-20-marks">Part E - Quality &amp; Conclusions (20 Marks)</a></li>
   </ul></li>
   <li><a href="#version-control-requirements" id="toc-version-control-requirements" class="nav-link" data-scroll-target="#version-control-requirements">Version Control Requirements</a></li>
   <li><a href="#submission-requirements" id="toc-submission-requirements" class="nav-link" data-scroll-target="#submission-requirements">Submission Requirements</a></li>
+  <li><a href="#support-material" id="toc-support-material" class="nav-link" data-scroll-target="#support-material">Support Material</a></li>
   <li><a href="#recommended-reading" id="toc-recommended-reading" class="nav-link" data-scroll-target="#recommended-reading">Recommended Reading</a></li>
   <li><a href="#quarto-markdown-shiny-related-resources" id="toc-quarto-markdown-shiny-related-resources" class="nav-link" data-scroll-target="#quarto-markdown-shiny-related-resources">Quarto Markdown &amp; Shiny Related Resources</a></li>
   <li><a href="#plot-table-related-resources" id="toc-plot-table-related-resources" class="nav-link" data-scroll-target="#plot-table-related-resources">Plot &amp; Table Related Resources</a></li>
@@ -79,7 +80,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page-right">
 
     <div>
     <div class="quarto-title-meta-heading">Author</div>
@@ -98,7 +99,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">17 December 2023</p>
+      <p class="date-modified">20 December 2023</p>
     </div>
   </div>
     
@@ -106,12 +107,14 @@ ul.task-list li input[type="checkbox"] {
   
 <div>
   <div class="abstract">
-    <div class="abstract-title">Abstract</div>
+    <div class="block-title">Abstract</div>
     This assignment is designed for an postgraduate program with a focus on Data Analytics for Game &amp; Extended Reality and Computer Animation. It encompasses five distinct parts, each aimed at assessing and enhancing students’ proficiency in different aspects of data analytics as applied to game development and animation.
   </div>
 </div>
 
+
 </header>
+
 
 <section id="learning-outcomes" class="level2">
 <h2 class="anchored" data-anchor-id="learning-outcomes">Learning Outcomes</h2>
@@ -438,7 +441,7 @@ ul.task-list li input[type="checkbox"] {
 <li>SELECT with DISTINCT and ORDER BY</li>
 <li>Subquery with SELECT</li>
 </ol>
-<p>Display the results in formatted table(s) in a Quarto Notebook file inside a <strong>Quarto Project</strong>. You should add pagination to the tables if the number of rows is larger than 8-10 (see Recommended Reading on creating tables)</p>
+<p>Display the results in formatted table(s) in a Quarto Notebook file inside a <strong>Quarto Website</strong>. You should add pagination to the tables if the number of rows is larger than 8-10 (see Recommended Reading on creating tables)</p>
 </section>
 </section>
 <section id="part-b---linear-regression-20-marks" class="level3">
@@ -450,27 +453,32 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Interpret</strong>: Interpret the model coefficients and discuss what insights they provide about game development.</li>
 <li><strong>Discuss</strong>: Comment on the reliability of the the linear regression model and any outliers present in the data.</li>
 </ol>
-<p>Output the results in a Quarto Notebook file inside a <strong>Quarto Project</strong>.</p>
+<p>Output the results in a Quarto Notebook file inside the <strong>Quarto Website</strong> from Part A.</p>
 </section>
-<section id="part-c---interactive-quarto-dashboard-shiny-web-application-30-marks" class="level3">
-<h3 class="anchored" data-anchor-id="part-c---interactive-quarto-dashboard-shiny-web-application-30-marks">Part C - Interactive Quarto Dashboard &amp; Shiny Web Application (30 Marks)</h3>
-<p>Create an interactive web application using Quarto Dashboards and Shiny to display and interact with data from the database. You are required develop an interactive web application containing <strong>two pages/tabs</strong> which allow the following:</p>
+<section id="part-c---interactive-shiny-application-using-quarto-dashboard-30-marks" class="level3">
+<h3 class="anchored" data-anchor-id="part-c---interactive-shiny-application-using-quarto-dashboard-30-marks">Part C - Interactive Shiny Application using Quarto Dashboard (30 Marks)</h3>
+<p>Create an interactive Shiny application using Quarto Dashboards to display and interact with data from the database. You are required develop an interactive web application containing <strong>two pages/tabs</strong> which allow the following:</p>
 <ol type="1">
 <li><strong>Data View</strong>: The first page/tab should allow the user to view the contents of <strong>any four tables</strong> in the database with no filtering or queries executed.You may need to consider using a more advanced table library (e.g.&nbsp;kable + kableExtra, reactable, DT) to add pagination to larger tables.</li>
 <li><strong>Plot View</strong>: The second page/tab should allow users to visualize data through 2-3 appropriate plots and <strong>interact</strong> with <strong>each</strong> plot. Typically, plots could include data related to project timelines, budget, asset types, etc.</li>
 </ol>
 <p>The second page/tab must support user interactions via input fields (e.g., textfield, dropdown, slider, checkbox) to allow interactions such as: * Selecting developers to view more detailed data on the projects they participated in. * Specifying a completion date range for projects.</p>
 <p>You must include a minimum of <strong>two fields</strong> for interaction for <strong>each</strong> plot.</p>
-<p>Output the results in a properly a <strong>Quarto Project</strong>. The web application does <strong>not</strong> need to be published to a remote server and may be run from your machine.</p>
+<p>Output the results in a <strong>Shiny Application Project</strong>. The application does <strong>not</strong> need to be published to a remote server and may be run from your machine. This will be a second, and separate project from the Quarto Website produced for Parts A &amp; B.</p>
 </section>
 <section id="part-d---technology-exploration-10-marks" class="level3">
 <h3 class="anchored" data-anchor-id="part-d---technology-exploration-10-marks">Part D - Technology Exploration (10 Marks)</h3>
 <p>Finally, you will be awarded a maximum of 10 marks for creative use of R packages which have <strong>not</strong> been covered in class. For example, this could be a package for rendering more visually appealing tables (i.e.&nbsp;reactable), animating plots (i.e.&nbsp;gganimate), or rendering the geospatial data from the database (i.e.&nbsp;customer city and customer country) using additional R packages (i.e.&nbsp;ggplot2 and ggmap).</p>
-<p>Note, in order to receive the marks for this component you should include a short paragraph in a separate Quarto Markdown file, entitled <em>Technology Exploration.qmd</em>, which summarises what component(s) you have added.</p>
+<p>Note, in order to receive the marks for this component you should include a short paragraph in a separate page, entitled <em>Technology Exploration.qmd</em>, which summarises what component(s) you have added, inside the <strong>Quarto Website</strong> from Parts A &amp; B.</p>
 </section>
 <section id="part-e---quality-conclusions-20-marks" class="level3">
 <h3 class="anchored" data-anchor-id="part-e---quality-conclusions-20-marks">Part E - Quality &amp; Conclusions (20 Marks)</h3>
-<p>You are required to present Assess the student’s ability to present a Quarto project containing three well-formatted documents. You will be assessed in terms of adherence to best practices in coding and data visualization and the quality of your conclusion. The assessment criteria for this component are listed below:</p>
+<p>You are required to present <strong>two</strong> separate project repos:</p>
+<ul>
+<li><strong>Quarto Website</strong> which brings together Parts A, B, D.</li>
+<li><strong>Shiny Application</strong> which hosts the Quarto Dashboard for Part C.</li>
+</ul>
+<p>You will be assessed in terms of adherence to best practices in coding and data visualization and the quality of your conclusions. The assessment criteria for this component are listed below:</p>
 <section id="document-formatting-4-marks" class="level4">
 <h4 class="anchored" data-anchor-id="document-formatting-4-marks">Document Formatting (4 Marks)</h4>
 <ul>
@@ -484,7 +492,7 @@ ul.task-list li input[type="checkbox"] {
 <h4 class="anchored" data-anchor-id="suitability-of-tables-in-part-a-4-marks">Suitability of Tables in Part A (4 Marks)</h4>
 <ul>
 <li>Clarity and readability of tables.</li>
-<li>Appropriate labeling for tables.</li>
+<li>Appropriate labelling for tables.</li>
 <li>Consistent and legible formatting in tables and figures.</li>
 </ul>
 </section>
@@ -532,6 +540,14 @@ ul.task-list li input[type="checkbox"] {
 <li>Each student <strong>must</strong> complete and <strong>sign</strong> a single assignment cover sheet. Please submit the signed cover sheet before 5 pm on the Friday of the week of the deadline.</li>
 </ol>
 </section>
+<section id="support-material" class="level2">
+<h2 class="anchored" data-anchor-id="support-material">Support Material</h2>
+<ul>
+<li><a href="https://github.com/nmcguinness/2023_MSC_DataAnalytics_Quarto_Demo.git">GitHub - Quarto Website Demo</a></li>
+<li><a href="https://github.com/nmcguinness/2023_MSC_DataAnalytics_Shiny_Quarto_Demo.git">GitHub - Shiny App with Quarto Dashboard</a></li>
+<li><a href="https://github.com/nmcguinness/2023_MSC_DataAnalytics_SQL.git">GitHub - Connecting to an SQLite DB</a></li>
+</ul>
+</section>
 <section id="recommended-reading" class="level2">
 <h2 class="anchored" data-anchor-id="recommended-reading">Recommended Reading</h2>
 <ul>
@@ -576,7 +592,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{mcguinness2023,
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{mcguinness2023,
   author = {McGuinness, Niall},
   title = {Data {Analytics} for {Immersive} {Environments} -
     {Individual} {Project}},
@@ -635,6 +651,33 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       } else {
         el.classList.add('notransition');
       }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
     }
   }
   const toggleColorMode = (alternate) => {
@@ -703,13 +746,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = 'default';
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -788,10 +833,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -801,8 +845,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -815,6 +868,120 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      return note.innerHTML;
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -858,6 +1025,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -883,6 +1051,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -943,6 +1137,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+
 
 
 
