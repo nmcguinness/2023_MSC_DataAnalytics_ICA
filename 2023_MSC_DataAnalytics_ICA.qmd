@@ -230,8 +230,8 @@ Your grade for this component will depend directly upon the **regularity** of yo
 
 ## Submission Requirements
 
-1. In the README of your repository you must include the **file names** to be opened (i.e. Part(s) A - D) for each requirement. I will **not** filter through your submission looking for the correct file for each part. I will interpret the absence of this file as a failure to properly communicate your work which will negatively affect your grade for Part E.
-2. A link to your R source code repository. Ensure that **no** changes are made to the repository following the submission deadline. You should create a separate fork for this submission and leave it unchanged after the deadline. Ask your lecturer for details on fork creation.
+1. In the README of your repositories you must include the **main file name** to be opened for each of the two projects (e.g. *index.qmd* for Shiny Application) for each requirement. I will **not** filter through your submission looking for the correct file for each part. I will interpret the absence of this file as a failure to properly communicate your work which will negatively affect your grade for Part E.
+2. A link to your R source code repositories (i.e. Quarto Website, Shiny Application). Ensure that **no** changes are made to the repositories following the submission deadline. You should create a separate fork for this submission and leave it unchanged after the deadline. Ask your lecturer for details on fork creation.
 3.  The assignment must be entirely the work of each student. Students are **not** permitted to share any pseudocode or source code from their solution with any other group in the class.
 4.  Students may **not** distribute the source code of their solution to any other student, in any format (i.e., electronic, verbal, or hardcopy transmission).
 5.  Plagiarised assignments will receive a mark of **zero**. This also applies to the individual/group allowing their work to be plagiarised. Any plagiarism will be reported to the Head of Department and a report will be added to your permanent academic record.
